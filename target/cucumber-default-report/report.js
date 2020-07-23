@@ -103,7 +103,8 @@ formatter.match({
   "location": "com.hrms.steps.LoginSteps.user_enter_valid_and(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using id\u003dtxtUsername\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-SG0CRU7\u0027, ip: \u0027192.168.100.23\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.clear(Unknown Source)\r\n\tat com.hrms.utils.CommonMethods.sendText(CommonMethods.java:33)\r\n\tat com.hrms.steps.LoginSteps.user_enter_valid_and(LoginSteps.java:70)\r\n\tat ✽.user enter \"Admin\" and \"Admin123\"(file:///C:/Users/Alex/eclipse-workspace/CucumberJenkins/src/test/resources/features/Login.feature:18)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "user click on login button",
@@ -113,7 +114,7 @@ formatter.match({
   "location": "com.hrms.steps.LoginSteps.user_click_on_login_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user see \"Invalid Credentials\"",
@@ -123,171 +124,5 @@ formatter.match({
   "location": "com.hrms.steps.LoginSteps.user_see(java.lang.String)"
 });
 formatter.result({
-  "error_message": "org.junit.ComparisonFailure: Not correct error message is displayed expected:\u003cInvalid [C]redentials\u003e but was:\u003cInvalid [c]redentials\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat com.hrms.steps.LoginSteps.user_see(LoginSteps.java:76)\n\tat ✽.user see \"Invalid Credentials\"(file:///Users/Syntax/eclipse-workspace/SyntaxBatch6/CucumberHRMS_Batch6/src/test/resources/features/Login.feature:20)\n",
-  "status": "failed"
-});
-formatter.embedding("image/png", "embedded0.png", "Error message validation while invalid login");
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Error message validation while invalid login",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@sprint5"
-    },
-    {
-      "name": "@login"
-    },
-    {
-      "name": "@reporting"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enter \"Hello\" and \"Syntax123!\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.hrms.steps.LoginSteps.user_enter_valid_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on login button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.hrms.steps.LoginSteps.user_click_on_login_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user see \"Invalid Credentials\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.hrms.steps.LoginSteps.user_see(java.lang.String)"
-});
-formatter.result({
-  "error_message": "org.junit.ComparisonFailure: Not correct error message is displayed expected:\u003cInvalid [C]redentials\u003e but was:\u003cInvalid [c]redentials\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat com.hrms.steps.LoginSteps.user_see(LoginSteps.java:76)\n\tat ✽.user see \"Invalid Credentials\"(file:///Users/Syntax/eclipse-workspace/SyntaxBatch6/CucumberHRMS_Batch6/src/test/resources/features/Login.feature:20)\n",
-  "status": "failed"
-});
-formatter.embedding("image/png", "embedded1.png", "Error message validation while invalid login");
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Error message validation while invalid login",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@sprint5"
-    },
-    {
-      "name": "@login"
-    },
-    {
-      "name": "@reporting"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enter \"Admin\" and \"\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.hrms.steps.LoginSteps.user_enter_valid_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on login button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.hrms.steps.LoginSteps.user_click_on_login_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user see \"Password cannot be empty\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.hrms.steps.LoginSteps.user_see(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded2.png", "Error message validation while invalid login");
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Error message validation while invalid login",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@sprint5"
-    },
-    {
-      "name": "@login"
-    },
-    {
-      "name": "@reporting"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enter \"\" and \"Syntax123!\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.hrms.steps.LoginSteps.user_enter_valid_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on login button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.hrms.steps.LoginSteps.user_click_on_login_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user see \"Username cannot be empty\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.hrms.steps.LoginSteps.user_see(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded3.png", "Error message validation while invalid login");
-formatter.after({
-  "status": "passed"
-});
+  "status": "skipped"
 });
